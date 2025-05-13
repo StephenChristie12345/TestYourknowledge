@@ -13,7 +13,7 @@ class Question3:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_question1)
+        setContentView(R.layout.activity_question3)
 
         val buttonTrue = findViewById<Button>(R.id.True)
         val buttonFalse = findViewById<Button>(R.id.False)
@@ -39,7 +39,8 @@ class Question3:AppCompatActivity() {
         }
     }
     private fun getCorrectAnswerForCurrentQuestion(): Boolean {
-        return true
+        return false
+
     }
 
     private fun showNextQuestion() {

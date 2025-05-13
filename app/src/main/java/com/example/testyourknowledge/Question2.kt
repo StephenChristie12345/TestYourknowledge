@@ -15,6 +15,8 @@ class Question2 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_question1)
 
+        val questionText = intent.get
+
         val buttonTrue = findViewById<Button>(R.id.True)
         val buttonFalse = findViewById<Button>(R.id.False)
         val buttonNext = findViewById<Button>(R.id.Next)
@@ -39,7 +41,7 @@ class Question2 : AppCompatActivity() {
         }
     }
     private fun getCorrectAnswerForCurrentQuestion(): Boolean {
-        return true
+        return false
     }
 
     private fun showNextQuestion() {

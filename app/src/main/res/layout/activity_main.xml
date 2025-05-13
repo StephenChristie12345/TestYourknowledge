@@ -7,7 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/welcome_message"
         android:layout_width="193dp"
         android:layout_height="31dp"
         android:text="Attention Soldier!"
@@ -16,37 +18,58 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.181" />
-
+        app:layout_constraintVertical_bias="0.124" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="344dp"
-        android:layout_height="36dp"
+        android:id="@+id/description"
+        android:layout_width="334dp"
+        android:layout_height="97dp"
         android:text="Welcoe to the knowledge game where we will be testing your Knowledge on the events of World War II"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.484" />
-
-
+        app:layout_constraintVertical_bias="0.536" />
 
     <Button
-        android:id="@+id/Start"
+        android:id="@+id/Start_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604" />
+        app:layout_constraintVertical_bias="0.749" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="272dp"
+        android:layout_height="283dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/giphy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
