@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Question1 : AppCompatActivity() {
+class Question3:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -43,7 +43,7 @@ class Question1 : AppCompatActivity() {
     }
 
     private fun showNextQuestion() {
-        val intent = Intent(this, Question2::class.java)
+        val intent = Intent(this, Question4::class.java)
         startActivity(intent)
         finish()
     }
