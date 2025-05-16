@@ -26,14 +26,15 @@ class Question2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_question1)
+        setContentView(R.layout.activity_question2)
 
         currentQuestionIndex = intent.getIntExtra("question_index", 0)
 
-        val questionTextView = findViewById<TextView>(R.id.textView2)
-        val buttonTrue = findViewById<Button>(R.id.True)
-        val buttonFalse = findViewById<Button>(R.id.False)
-        val buttonNext = findViewById<Button>(R.id.Next)
+        val questionTextView2 = findViewById<TextView>(R.id.textView2)
+        val questionTextView = findViewById<TextView>(R.id.textView3)
+        val buttonTrue = findViewById<Button>(R.id.button_true2)
+        val buttonFalse = findViewById<Button>(R.id.button_false2)
+        val buttonNext = findViewById<Button>(R.id.button_next2)
 
         questionTextView.text = question[currentQuestionIndex]
 

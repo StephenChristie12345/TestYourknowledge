@@ -7,8 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.bumptech.glide.Glide
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,9 +22,16 @@ class MainActivity : AppCompatActivity() {
         val description = findViewById<TextView>(R.id.description)
         val startButton = findViewById<Button>(R.id.Start_button)
         val exitButton = findViewById<Button>(R.id.exit_button)
+        val imageView = findViewById<ImageView>(R.id.imageViewGif)
+
+        Glide.with(this)
+            .asGif()
+            .load(R.raw.giphy)
+            .into(imageView)
 
 
         welcomeMessage.text = "Attention Soldier!"
+
 
 
 

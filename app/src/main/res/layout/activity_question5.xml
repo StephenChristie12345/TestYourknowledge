@@ -8,7 +8,7 @@
     tools:context=".Question5">
 
     <Button
-        android:id="@+id/True5"
+        android:id="@+id/button_true5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="True"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <Button
-        android:id="@+id/False5"
+        android:id="@+id/button_false5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="False"
@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <Button
-        android:id="@+id/Next5"
+        android:id="@+id/button_next5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"

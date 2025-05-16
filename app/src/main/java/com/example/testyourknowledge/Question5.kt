@@ -1,5 +1,6 @@
 package com.example.testyourknowledge
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -23,17 +24,18 @@ class Question5 : AppCompatActivity() {
 
     private var currentQuestionIndex = 0
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_question1)
+        setContentView(R.layout.activity_question5)
 
         currentQuestionIndex = intent.getIntExtra("question_index", 0)
 
         val questionTextView = findViewById<TextView>(R.id.textView2)
-        val buttonTrue = findViewById<Button>(R.id.True)
-        val buttonFalse = findViewById<Button>(R.id.False)
-        val buttonNext = findViewById<Button>(R.id.Next)
+        val buttonTrue = findViewById<Button>(R.id.button_true5)
+        val buttonFalse = findViewById<Button>(R.id.button_false5)
+        val buttonNext = findViewById<Button>(R.id.button_next5)
 
         questionTextView.text = question[currentQuestionIndex]
 
