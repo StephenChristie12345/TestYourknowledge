@@ -32,7 +32,8 @@ class Question5 : AppCompatActivity() {
 
         currentQuestionIndex = intent.getIntExtra("question_index", 0)
 
-        val questionTextView = findViewById<TextView>(R.id.textView2)
+        val questionTextView9 = findViewById<TextView>(R.id.textView9)
+        val questionTextView = findViewById<TextView>(R.id.textView10)
         val buttonTrue = findViewById<Button>(R.id.button_true5)
         val buttonFalse = findViewById<Button>(R.id.button_false5)
         val buttonNext = findViewById<Button>(R.id.button_next5)
