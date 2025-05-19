@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         val imageView = findViewById<ImageView>(R.id.imageView2)
 
 
+
+
         welcomeMessage.text = "Attention Soldier!"
 
 

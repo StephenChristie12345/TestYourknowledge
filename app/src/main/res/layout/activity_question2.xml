@@ -45,41 +45,43 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="151dp"
-        android:layout_height="55dp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
         android:text="Question 2!"
         android:textAlignment="center"
-        android:textSize="18dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.147" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="305dp"
-        android:layout_height="61dp"
+        android:layout_width="397dp"
+        android:layout_height="136dp"
         android:text="The atomic bomb was first dropped on the German city of Berlin."
         android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27" />
+        app:layout_constraintVertical_bias="0.252" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="382dp"
-        android:layout_height="259dp"
+        android:layout_width="402dp"
+        android:layout_height="303dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559"
+        app:layout_constraintVertical_bias="0.523"
         app:srcCompat="@drawable/img" />
 
 

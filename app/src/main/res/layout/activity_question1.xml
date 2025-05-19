@@ -45,28 +45,41 @@
 
     <TextView
         android:id="@+id/Question1"
-        android:layout_width="186dp"
-        android:layout_height="28dp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
         android:text="Question 1!"
         android:textAlignment="center"
-        android:textSize="18dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.124" />
+        app:layout_constraintVertical_bias="0.147" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="279dp"
-        android:layout_height="51dp"
+        android:layout_width="303dp"
+        android:layout_height="65dp"
         android:text="World War II began in 1939 when Germany invaded Poland."
         android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.232" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="395dp"
+        android:layout_height="469dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poland" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
