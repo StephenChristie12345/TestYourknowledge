@@ -1,6 +1,5 @@
 package com.example.testyourknowledge
 
-
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -17,7 +16,8 @@ class Score : AppCompatActivity() {
         setContentView(R.layout.activity_score)
 
         val buttonExit = findViewById< Button>(R.id.button_exit1)
-        val buttonRestart = findViewById<Button>(R.id.button_restart1)
+        val buttonRestart = findViewById<Button>(R.id.button_restart)
+
 
         val score = intent.getIntExtra("score", 0)
         val scoreTextView = findViewById<TextView>(R.id.textScore)
@@ -33,6 +33,5 @@ class Score : AppCompatActivity() {
         buttonExit.setOnClickListener {
             finishAffinity()
         }
-
     }
 }

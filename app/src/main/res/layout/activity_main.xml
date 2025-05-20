@@ -27,7 +27,7 @@
         android:id="@+id/description"
         android:layout_width="388dp"
         android:layout_height="96dp"
-        android:text="Welcoe to the knowledge game where we will be testing your Knowledge on the events of World War II"
+        android:text="Welcome to the knowledge game where we will be testing your Knowledge on the events of World War II"
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="italic"

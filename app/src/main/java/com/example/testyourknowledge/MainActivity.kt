@@ -3,7 +3,6 @@ package com.example.testyourknowledge
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,10 +19,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val welcomeMessage = findViewById<TextView>(R.id.welcome_message)
-        val description = findViewById<TextView>(R.id.description)
         val startButton = findViewById<Button>(R.id.Start_button)
         val exitButton = findViewById<Button>(R.id.exit_button)
-        val imageView = findViewById<ImageView>(R.id.imageView2)
 
 
 

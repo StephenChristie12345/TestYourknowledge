@@ -24,25 +24,37 @@ class Question2 : AppCompatActivity() {
 
         questionTextView.text = "The Atomic Bomb was first dropped on the German City of Berlin"
         var score = intent.getIntExtra("score", 0)
+        var answered = false
 
         buttonTrue.setOnClickListener {
-            Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show()
-            score++
-        }
+            if (!answered) {
+                Toast.makeText(this, "Incorrect", Toast.LENGTH_SHORT).show()
+                answered = true
+                buttonTrue.isEnabled = false
+                buttonFalse.isEnabled = false
+            }
+            }
 
-        buttonFalse.setOnClickListener {
-            Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
-        }
 
-        buttonNext.setOnClickListener {
-            val intent = Intent(this, Question3::class.java)
-            intent.putExtra("score", score)
-            startActivity(intent)
-            finish()
-        }
+            buttonFalse.setOnClickListener {
+                if (!answered) {
+                    Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+                    score++
+                    answered = true
+                    buttonTrue.isEnabled = false
+                    buttonFalse.isEnabled = false
+                }
+                }
+
+
+                buttonNext.setOnClickListener {
+                    val intent = Intent(this, Question3::class.java)
+                    intent.putExtra("score", score)
+                    startActivity(intent)
+                    finish()
+                }
     }
 }
-
 
 
 

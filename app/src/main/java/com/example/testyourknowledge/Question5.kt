@@ -22,23 +22,35 @@ class Question5 : AppCompatActivity() {
 
         questionTextView.text = "The D-Day invasion took place on the beaches of Normandy, France"
         var score = intent.getIntExtra("score", 0)
+        var answered = false
 
         buttonTrue.setOnClickListener {
-            Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
-            score++
+            if (!answered) {
+                Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+                score++
+                answered = true
+                buttonTrue.isEnabled = false
+                buttonFalse.isEnabled = false
+            }
+            }
+
+            buttonFalse.setOnClickListener {
+                if (!answered) {
+                    Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show()
+                    answered = true
+                    buttonTrue.isEnabled = false
+                    buttonFalse.isEnabled = false
+                }
+                }
+
+                buttonNext.setOnClickListener {
+                    val intent = Intent(this, Score::class.java)
+                    intent.putExtra("score", score)
+                    startActivity(intent)
+                    finish()
+                }
+            }
         }
 
-        buttonFalse.setOnClickListener {
-            Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show()
-        }
-
-        buttonNext.setOnClickListener {
-            val intent = Intent(this, Score::class.java)
-            intent.putExtra("score", score)
-            startActivity(intent)
-            finish()
-        }
-    }
-}
 
 
